@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Mystery Word Hunt</h1>
+        <button id="startButton">Start Game</button>
+        <div id="gameArea" class="hidden">
+            <p id="word">_ _ _ _ _</p>
+            <input type="text" id="guessInput" maxlength="1" disabled>
+            <button id="submitGuess" disabled>Guess</button>
+            <div id="hint" class="hidden"></div>
+            <div class="timer-container">
+                <p>Time Remaining: <span id="timer">60</span> seconds</p>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div id="message"></div>
+        </div>
+        <button id="tryAgainButton" class="hidden">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
